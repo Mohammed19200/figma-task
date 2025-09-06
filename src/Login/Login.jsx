@@ -10,7 +10,7 @@ export default function LoginPage() {
       <div className="div-circle-BottomRight"></div>
       <div className="div-circle-BottomLeft"></div>
       <div className="div-circle-TopLeft"></div>
-
+      
       <section className="form-section col-12 col-md-11 col-lg-4 col-xl-4">
         <h1>Welcome back</h1>
         <p>
