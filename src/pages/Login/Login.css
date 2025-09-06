@@ -125,8 +125,8 @@
 .image-section {
   overflow: hidden;
   height: 100vh;
-  background-image: url("../assets/b74714317592c3c8176c99baddf62febe0e276d0.png"),
-    url("../assets/9e4298a54af78a8be9b2851a140ca8232f42ded4.png");
+  background-image: url("../../assets/b74714317592c3c8176c99baddf62febe0e276d0.png"),
+    url("../../assets/9e4298a54af78a8be9b2851a140ca8232f42ded4.png");
   background-position: -463px center, center;
   background-size: 1734px, 744px;
   background-repeat: no-repeat, no-repeat;

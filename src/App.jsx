@@ -1,10 +1,17 @@
 import "./App.css";
-import LoginPage from "./Login/Login";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Dashboard from "./pages/Dashboard/Dashboard";
+import LoginPage from "./pages/Login/Login";
 
 function App() {
   return (
     <>
-      <LoginPage />
+          <Router>
+      <Routes>
+        <Route path="/" element={<LoginPage />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
+    </Router>
     </>
   );
 }

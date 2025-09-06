@@ -2,8 +2,27 @@ import "./Login.css";
 import "./LoginMediaQuery.css";
 import { PiShoppingBag } from "react-icons/pi";
 import { CiLock } from "react-icons/ci";
-import logoTitle from "../assets/logo.png";
+import logoTitle from "../../assets/logo.png";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { useAuth } from "../../store/useAuth";
 export default function LoginPage() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const { login, error } = useAuth();
+  const navigate = useNavigate();
+
+  const isValidEmail = (val) => /\S+@\S+\.\S+/.test(val);
+  const isDisabled = !isValidEmail(email) || password.length === 0;
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const res = await login(email, password);
+    if (res.success) {
+      navigate("/dashboard");
+    }
+  };
+
   return (
     <main className="hero-section col-12">
       {/* circle */}
@@ -14,31 +33,44 @@ export default function LoginPage() {
 
       {/* Section 1 */}
       <section className="form-section col-12 col-md-11 col-lg-4 col-xl-4">
+        {error && <p className="text-danger">{error}</p>}
+
         <h1>Welcome back</h1>
         <p>
           Step into our shopping metaverse for an unforgettable shopping
           experience
         </p>
-        <form className="form-style" action="">
+
+        <form onSubmit={handleSubmit} className="form-style" action="">
           <div className="input-group">
             <span className="input-group-text">
               <PiShoppingBag />
             </span>
-            <input type="email" className="form-control" placeholder="Email" />
+            <input
+              type="email"
+             value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="form-control"
+              placeholder="Email"
+            />
           </div>
 
-          <div className="input-group" >
+          <div className="input-group">
             <span className="input-group-text">
               <CiLock />
             </span>
             <input
               type="password"
               className="form-control"
+            value={password}
+              onChange={(e) => setPassword(e.target.value)}
               placeholder="Password"
             />
           </div>
 
-          <button type="submit" className="btn btn-primary w-100">
+ {error && <p className="text-danger">{error}</p>}
+
+          <button disabled={isDisabled} type="submit" className="btn btn-primary w-100">
             Login
           </button>
 
