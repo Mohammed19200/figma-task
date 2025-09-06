@@ -113,9 +113,25 @@
   }
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 470px) and (max-width: 533.5px) {
+  .image-section {
+    background-position: -40px center, center;
+    background-size: 505px, 221px;
+    height: 24vh;
+  }
+}
+
+@media screen and (min-width: 534px) {
   .image-section {
     background-position: -22px center, center;
+    background-size: 505px, 221px;
+    height: 24vh;
+  }
+}
+
+@media screen and (min-width: 580px) {
+  .image-section {
+    background-position: 2px center, center;
     background-size: 505px, 221px;
     height: 24vh;
   }
@@ -144,6 +160,9 @@
     background: #f8f8f8;
     border: 1px solid #ffffff;
   }
+  .images-container {
+    gap: 2.5rem;
+  }
 }
 
 @media screen and (min-width: 639px) {
@@ -151,6 +170,9 @@
     background-position: 30px center, center;
     background-size: 505px, 221px;
     height: 40vh;
+  }
+  .images-container {
+    gap: 2.5rem;
   }
 }
 
@@ -178,7 +200,15 @@
   }
 }
 
-@media screen and (min-width: 873px) and (max-width: 991px) {
+@media screen and (min-width: 873px) and (max-width: 937.5px) {
+  .image-section {
+    background-position: 110px center, center;
+    background-size: 505px, 221px;
+    height: 24vh;
+  }
+}
+
+@media screen and (min-width: 938px) and (max-width: 991px) {
   .image-section {
     background-position: 166px center, center;
     background-size: 505px, 221px;
