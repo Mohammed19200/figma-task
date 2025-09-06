@@ -268,14 +268,14 @@
     width: 381px !important;
   }
   .logo-title {
-    width: 414px;
+    width: 330px;
   }
 }
 @media screen and (min-width: 1300px) {
   .image-section {
     background-position: -366px center, center;
     background-size: 1437px, 610px;
-    height: 60vh;
+    height: 55vh;
   }
   .images-container {
     gap: 0.5rem;
@@ -286,70 +286,70 @@
   .image-section {
     background-position: -325px center, center;
     background-size: 1437px, 610px;
-    height: 60vh;
+    height: 55vh;
   }
 }
 @media screen and (min-width: 1450px) {
   .image-section {
     background-position: -323px center, center;
     background-size: 1437px, 610px;
-    height: 60vh;
+    height: 55vh;
   }
 }
 @media screen and (min-width: 1480px) {
   .image-section {
     background-position: -309px center, center;
     background-size: 1437px, 610px;
-    height: 60vh;
+    height: 55vh;
   }
 }
 @media screen and (min-width: 1500px) {
   .image-section {
     background-position: -339px center, center;
     background-size: 1515px, 644px;
-    height: 60vh;
+    height: 55vh;
   }
 }
 @media screen and (min-width: 1525px) {
   .image-section {
     background-position: -278px center, center;
     background-size: 1400px, 594px;
-    height: 60vh;
+    height: 55vh;
   }
 }
 @media screen and (min-width: 1560px) {
   .image-section {
     background-position: -290px center, center;
     background-size: 1437px, 610px;
-    height: 60vh;
+    height: 55vh;
   }
 }
 @media screen and (min-width: 1660px) {
   .image-section {
     background-position: -259px center, center;
     background-size: 1437px, 610px;
-    height: 60vh;
+    height: 55vh;
   }
 }
 @media screen and (min-width: 1780px) {
   .image-section {
     background-position: -222px center, center;
     background-size: 1437px, 610px;
-    height: 60vh;
+    height: 64vh;
   }
 }
 @media screen and (min-width: 1890px) {
   .image-section {
     background-position: -190px center, center;
     background-size: 1437px, 610px;
-    height: 60vh;
+    height: 64vh;
   }
 }
 @media screen and (min-width: 2000px) {
   .image-section {
     background-position: -170px center, center;
     background-size: 1437px, 610px;
-    height: 60vh;
+    height: 64vh;
   }
 }
 @media screen and (min-width: 2100px) {
