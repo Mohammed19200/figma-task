@@ -9,7 +9,7 @@
   padding: 2rem;
   min-height: 100vh;
   gap: 2rem;
-  background-color: #ffffff;
+  background-color: #e9ecf2;
 }
 
 /* start section 1 */
@@ -29,7 +29,7 @@
   font-size: 56px;
   line-height: 100%;
   letter-spacing: 0%;
-  margin-bottom: 1rem;
+  margin-bottom: 8px !important;
   text-align: center;
 }
 
@@ -42,9 +42,11 @@
   color: #62626b;
   text-align: center;
   width: 381px;
+  margin-bottom: 15px !important;
 }
 
 .input-group {
+  margin-bottom: 20px !important;
   border-radius: 8px;
   overflow: hidden;
   width: 381px;
@@ -99,6 +101,7 @@
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
+  margin-top: 16px !important;
 }
 
 .btn-primary:hover {
